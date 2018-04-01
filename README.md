@@ -76,3 +76,10 @@ You'll notice the folder structure is a lot like the structure of the app itself
 ### Flow
 
 Flow is a static type checker for JavaScript.
+
+## Code Style
+
+1. You should end statements with a semicolon `;`
+2. You should use double quotes for strings
+  1. If you need variables inside strings you are to use back ticks to interpolate strings; "`"
+1.   2. You should destructure imports or variables whenever possible.
