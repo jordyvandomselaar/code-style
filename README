@@ -51,3 +51,27 @@ src/
 Every part of your application is to be divided into separate modules.
 
 Things like `auth`, `home` and `dashboard` make for good modules.
+
+---
+
+Modules are chunks of your application that may never cross boundaries. One module may not use code from any other module. 
+
+### Sharing code between modules
+
+If a module requires code from another module you are to lift the code up to the application's shared code, usually by means of a library.
+
+It is also possible to create a new module with the code required, and to add the other modules that use the code as submodules.
+
+### Folder structure
+
+You'll notice the folder structure is a lot like the structure of the app itself;
+
+1. Each module should have a `src/` folder
+2. Each module may have a `lib/` folder, if you have any module specific libraries.
+3. Inside the `src/` folder your components, submodules etc should live.
+
+## Libraries
+
+### Flow
+
+Flow is a static type checker for JavaScript.
