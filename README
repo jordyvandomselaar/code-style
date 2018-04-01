@@ -1,3 +1,53 @@
 # Jordy's React structure
+
 ## Base Structure
 
+The root of your application should contain configs for any tools you might use, a `README`, `package.json` and so on.
+
+**Example**
+
+```
+root
+├── README.md
+├── node_modules
+├── package.json
+├── public
+├── src
+├── yarn-error.log
+└── yarn.lock
+```
+
+`node_modules` obviously stores any and all libraries, tools, and frameworks you use.
+
+`public/` should store your `index.html`, `favicon`, and your `manifest`
+
+`src/` should store all your actual code.
+
+Most of this structure should look natural to you as it's the base structure of any app bootstrapped with `create-react-app`, it's a CLI tool that takes the work of configuring Webpack and all that out of your hands and takes care of business.
+
+---------------
+
+Since src/ folder stores all your actual code, most work will be done in here.
+
+An example markup of this folder is as follows;
+
+```
+src/
+├── components
+├── index.js
+├── lib
+├── modules
+└── registerServiceWorker.js
+```
+
+`lib/` is where your custom libraries should live, it's usually a good idea to turn these into packages at some point.
+
+`components/` is where your application-widde components should live, such as layouts, your `<App />` component, etc…
+
+`modules` is where your other components will live.
+
+## Modules
+
+Every part of your application is to be divided into separate modules.
+
+Things like `auth`, `home` and `dashboard` make for good modules.
