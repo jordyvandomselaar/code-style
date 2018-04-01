@@ -42,7 +42,7 @@ src/
 
 `lib/` is where your custom libraries should live, it's usually a good idea to turn these into packages at some point.
 
-`components/` is where your application-widde components should live, such as layouts, your `<App />` component, etc…
+`components/` is where your application-wide components should live, such as layouts, your `<App />` component, etc…
 
 `modules` is where your other components will live.
 
@@ -69,6 +69,7 @@ You'll notice the folder structure is a lot like the structure of the app itself
 1. Each module should have a `src/` folder
 2. Each module may have a `lib/` folder, if you have any module specific libraries.
 3. Inside the `src/` folder your components, submodules etc should live.
+4. A `src/views` folder is to have components that display entire pages of content. Each view can again have a `components/` folder to house any components to be used in the view.
 
 ## Libraries
 
